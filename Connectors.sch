@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 3
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Connectors [Pixhawk V5]"
+Date "1"
+Rev "1"
+Comp "MP1Flight"
+Comment1 "Arduplane based flight controller for STM32MP1"
 Comment2 ""
 Comment3 ""
 Comment4 ""
