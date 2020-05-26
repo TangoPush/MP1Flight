@@ -3,8 +3,8 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
-Title ""
+Sheet 2 3
+Title "Contains Debugging connectors for Rev1"
 Date "1"
 Rev "1"
 Comp "MP1Flight"
@@ -30,24 +30,14 @@ Text Notes 2000 2650 0    50   ~ 0
 DEBUG Connector\n
 Wire Wire Line
 	2800 3100 3000 3100
-Text Label 3000 3100 0    50   ~ 0
-STM32-NRST
 Wire Wire Line
 	2800 3300 3000 3300
 Wire Wire Line
 	2800 3400 3000 3400
-Text Label 3000 3400 0    50   ~ 0
-SWDIO
 Wire Wire Line
 	2800 3500 3000 3500
-Text Label 3000 3300 0    50   ~ 0
-SWDCLK
-Text Label 3000 3500 0    50   ~ 0
-SWO
 Wire Wire Line
 	2800 3600 3000 3600
-Text Label 3000 3600 0    50   ~ 0
-TDI
 $Comp
 L power:GND #PWR?
 U 1 1 5EDB9DBE
@@ -150,4 +140,101 @@ F 3 "" H 3900 2550 50  0001 C CNN
 $EndComp
 Text Notes 2600 2300 0    50   ~ 0
 Unsure about which net to use\n
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5EEEFC78
+P 2600 5150
+AR Path="/5EEEFC78" Ref="#PWR?"  Part="1" 
+AR Path="/5EDB4AB1/5EEEFC78" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 2600 5000 50  0001 C CNN
+F 1 "+3V3" H 2615 5323 50  0000 C CNN
+F 2 "" H 2600 5150 50  0001 C CNN
+F 3 "" H 2600 5150 50  0001 C CNN
+	1    2600 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EEEFC7E
+P 2600 5450
+AR Path="/5EEEFC7E" Ref="#PWR?"  Part="1" 
+AR Path="/5EDB4AB1/5EEEFC7E" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 2600 5200 50  0001 C CNN
+F 1 "GND" H 2605 5277 50  0000 C CNN
+F 2 "" H 2600 5450 50  0001 C CNN
+F 3 "" H 2600 5450 50  0001 C CNN
+	1    2600 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5450 2600 5450
+Wire Wire Line
+	2100 5350 2600 5350
+Wire Wire Line
+	2100 5250 2600 5250
+Wire Wire Line
+	2100 5150 2600 5150
+Text Notes 1850 4850 0    50   ~ 0
+LINUX UART
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 5EEEFC89
+P 1900 5250
+AR Path="/5EEEFC89" Ref="J?"  Part="1" 
+AR Path="/5EDB4AB1/5EEEFC89" Ref="J6"  Part="1" 
+F 0 "J6" H 2008 5531 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 2008 5440 50  0000 C CNN
+F 2 "" H 1900 5250 50  0001 C CNN
+F 3 "~" H 1900 5250 50  0001 C CNN
+	1    1900 5250
+	1    0    0    -1  
+$EndComp
+Text HLabel 3000 3300 2    50   Input ~ 0
+SWDCLK
+Text HLabel 3000 3400 2    50   BiDi ~ 0
+SWDIO
+Text HLabel 3000 3500 2    50   Input ~ 0
+SWO
+Text HLabel 3000 3600 2    50   Input ~ 0
+TDI
+Text HLabel 3000 3100 2    50   Input ~ 0
+NRST
+Text HLabel 2600 5250 2    50   Input ~ 0
+UART-RXD
+Text HLabel 2600 5350 2    50   Input ~ 0
+UART-TXD
+$Comp
+L Device:C C16
+U 1 1 5EEF13AB
+P 3250 5300
+F 0 "C16" H 3365 5346 50  0000 L CNN
+F 1 "100nF" H 3365 5255 50  0000 L CNN
+F 2 "" H 3288 5150 50  0001 C CNN
+F 3 "~" H 3250 5300 50  0001 C CNN
+	1    3250 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 5150 3250 5150
+Connection ~ 2600 5150
+Wire Wire Line
+	3250 5450 2600 5450
+Connection ~ 2600 5450
+$Comp
+L Device:C C17
+U 1 1 5EEF31BC
+P 3950 5300
+F 0 "C17" H 4065 5346 50  0000 L CNN
+F 1 "1uF" H 4065 5255 50  0000 L CNN
+F 2 "" H 3988 5150 50  0001 C CNN
+F 3 "~" H 3950 5300 50  0001 C CNN
+	1    3950 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 5150 3950 5150
+Connection ~ 3250 5150
+Wire Wire Line
+	3950 5450 3250 5450
+Connection ~ 3250 5450
 $EndSCHEMATC
