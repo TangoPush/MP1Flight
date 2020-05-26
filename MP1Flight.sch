@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 5
+Sheet 1 7
 Title "MP1Flight"
 Date "1"
 Rev "1"
@@ -206,53 +206,6 @@ SWDCLK
 Text Label 12950 9550 2    50   ~ 0
 TDI
 $Comp
-L Device:LED D1
-U 1 1 5ECDD9BB
-P 5750 1800
-F 0 "D1" V 5789 1682 50  0000 R CNN
-F 1 "LED" V 5698 1682 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5750 1800 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2186941.pdf" H 5750 1800 50  0001 C CNN
-F 4 "SML-D15UWT86C" V 5750 1800 50  0001 C CNN "PartNumber"
-F 5 "ROHM" V 5750 1800 50  0001 C CNN "Manufacturer"
-F 6 "Red" V 5600 1600 50  0000 C CNN "Colour"
-	1    5750 1800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5ECDFE6E
-P 5750 1500
-F 0 "R1" H 5820 1546 50  0000 L CNN
-F 1 "330" H 5820 1455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5680 1500 50  0001 C CNN
-F 3 "~" H 5750 1500 50  0001 C CNN
-	1    5750 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0114
-U 1 1 5ECE241D
-P 5750 1350
-F 0 "#PWR0114" H 5750 1200 50  0001 C CNN
-F 1 "+5V" H 5765 1523 50  0000 C CNN
-F 2 "" H 5750 1350 50  0001 C CNN
-F 3 "" H 5750 1350 50  0001 C CNN
-	1    5750 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0115
-U 1 1 5ECE3263
-P 5750 1950
-F 0 "#PWR0115" H 5750 1700 50  0001 C CNN
-F 1 "GND" H 5755 1777 50  0000 C CNN
-F 2 "" H 5750 1950 50  0001 C CNN
-F 3 "" H 5750 1950 50  0001 C CNN
-	1    5750 1950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C7
 U 1 1 5ECEF8ED
 P 13150 4300
@@ -347,9 +300,6 @@ F 3 "" H 14850 4550 50  0001 C CNN
 	1    14850 4550
 	1    0    0    -1  
 $EndComp
-Connection ~ 14850 4550
-Wire Wire Line
-	14250 4550 14850 4550
 $Comp
 L power:VDD #PWR0121
 U 1 1 5ED1FEA4
@@ -460,161 +410,6 @@ Text Label 15000 5750 0    50   ~ 0
 USART3-TXD
 Text Label 15000 5850 0    50   ~ 0
 USART3-RXD
-$Comp
-L Sensor_Motion:MPU-9250 U1
-U 1 1 5ED40EBC
-P 8400 2300
-F 0 "U1" H 8400 1311 50  0000 C CNN
-F 1 "MPU-9250" H 8400 1220 50  0000 C CNN
-F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 8400 1300 50  0001 C CNN
-F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 8400 2150 50  0001 C CNN
-	1    8400 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8300 1400 8400 1400
-$Comp
-L power:+3V3 #PWR0129
-U 1 1 5ED48191
-P 8400 1250
-F 0 "#PWR0129" H 8400 1100 50  0001 C CNN
-F 1 "+3V3" H 8415 1423 50  0000 C CNN
-F 2 "" H 8400 1250 50  0001 C CNN
-F 3 "" H 8400 1250 50  0001 C CNN
-	1    8400 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8400 1400 8400 1250
-Connection ~ 8400 1400
-Wire Wire Line
-	8400 1400 8500 1400
-$Comp
-L Device:C C8
-U 1 1 5ED4B4EA
-P 9000 1400
-F 0 "C8" H 9115 1446 50  0000 L CNN
-F 1 "2.2uF" H 9115 1355 50  0000 L CNN
-F 2 "" H 9038 1250 50  0001 C CNN
-F 3 "~" H 9000 1400 50  0001 C CNN
-	1    9000 1400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8500 1400 8600 1400
-Wire Wire Line
-	8600 1400 8600 1250
-Wire Wire Line
-	8600 1250 9000 1250
-Connection ~ 8500 1400
-$Comp
-L Device:C C9
-U 1 1 5ED506D3
-P 9500 1400
-F 0 "C9" H 9615 1446 50  0000 L CNN
-F 1 "100nF" H 9615 1355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9538 1250 50  0001 C CNN
-F 3 "~" H 9500 1400 50  0001 C CNN
-	1    9500 1400
-	1    0    0    -1  
-$EndComp
-Connection ~ 9000 1250
-$Comp
-L power:GND #PWR0130
-U 1 1 5ED5471A
-P 9300 1650
-F 0 "#PWR0130" H 9300 1400 50  0001 C CNN
-F 1 "GND" H 9305 1477 50  0000 C CNN
-F 2 "" H 9300 1650 50  0001 C CNN
-F 3 "" H 9300 1650 50  0001 C CNN
-	1    9300 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9000 1550 9300 1550
-Wire Wire Line
-	9300 1550 9300 1650
-Wire Wire Line
-	9000 1250 9500 1250
-Wire Wire Line
-	9300 1550 9500 1550
-Connection ~ 9300 1550
-Wire Wire Line
-	7700 2500 7700 3200
-Wire Wire Line
-	7700 3200 8400 3200
-Wire Wire Line
-	8400 3200 8850 3200
-Wire Wire Line
-	9100 3200 9100 2700
-Connection ~ 8400 3200
-$Comp
-L power:GND #PWR0131
-U 1 1 5ED65E1F
-P 8850 3200
-F 0 "#PWR0131" H 8850 2950 50  0001 C CNN
-F 1 "GND" H 8855 3027 50  0000 C CNN
-F 2 "" H 8850 3200 50  0001 C CNN
-F 3 "" H 8850 3200 50  0001 C CNN
-	1    8850 3200
-	1    0    0    -1  
-$EndComp
-Connection ~ 8850 3200
-Wire Wire Line
-	8850 3200 9100 3200
-$Comp
-L Device:C C10
-U 1 1 5ED6709E
-P 9450 3000
-F 0 "C10" H 9565 3046 50  0000 L CNN
-F 1 "100nF" H 9565 2955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9488 2850 50  0001 C CNN
-F 3 "~" H 9450 3000 50  0001 C CNN
-	1    9450 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9450 2850 9450 2500
-Wire Wire Line
-	9450 2500 9100 2500
-Wire Wire Line
-	9450 3150 9450 3200
-Wire Wire Line
-	9450 3200 9100 3200
-Connection ~ 9100 3200
-$Comp
-L power:+3V3 #PWR0132
-U 1 1 5ED70E9E
-P 9100 2600
-F 0 "#PWR0132" H 9100 2450 50  0001 C CNN
-F 1 "+3V3" V 9115 2728 50  0000 L CNN
-F 2 "" H 9100 2600 50  0001 C CNN
-F 3 "" H 9100 2600 50  0001 C CNN
-	1    9100 2600
-	0    1    1    0   
-$EndComp
-NoConn ~ 9100 2200
-NoConn ~ 9100 2300
-Wire Wire Line
-	9100 2000 9400 2000
-Text Label 9400 2000 0    50   ~ 0
-MPU9250_DRDY
-Wire Wire Line
-	7700 2000 7450 2000
-Text Label 7450 2000 2    50   ~ 0
-MOSI
-Wire Wire Line
-	7700 2100 7450 2100
-Text Label 7450 2100 2    50   ~ 0
-MISO
-Wire Wire Line
-	7700 2200 7450 2200
-Text Label 7450 2200 2    50   ~ 0
-SCLK
-Wire Wire Line
-	7700 2300 7450 2300
-Text Label 7450 2300 2    50   ~ 0
-MPU9250_CS
 Wire Wire Line
 	14700 10350 14750 10350
 Connection ~ 14750 10350
@@ -841,9 +636,9 @@ Wire Wire Line
 Wire Wire Line
 	13150 6150 12650 6150
 Text Label 12650 6150 2    50   ~ 0
-MPU9250_MISO
+MISO
 Text Label 12650 6250 2    50   ~ 0
-MPU9250_MOSI
+MOSI
 Wire Wire Line
 	14750 9050 15050 9050
 Text Label 15050 9050 0    50   ~ 0
@@ -1026,4 +821,87 @@ F10 "DET_B" I L 19100 4800 50
 $EndSheet
 NoConn ~ 19100 4700
 NoConn ~ 19100 4800
+$Sheet
+S 1850 7800 1450 750 
+U 5F082D56
+F0 "ServoConnectors" 50
+F1 "ServoConnectors.sch" 50
+F2 "PWM1" I R 3300 7900 50 
+F3 "PWM2" I R 3300 8000 50 
+F4 "PWM3" I R 3300 8100 50 
+F5 "PWM4" I R 3300 8200 50 
+F6 "PWM5" I R 3300 8300 50 
+F7 "PWM6" I R 3300 8400 50 
+$EndSheet
+$Sheet
+S 7600 3750 1600 1500
+U 5F064FD4
+F0 "Sensors" 50
+F1 "Sensors.sch" 50
+F2 "MPU_9250_DRDY" I R 9200 4350 50 
+F3 "MOSI" I R 9200 4500 50 
+F4 "MISO" O R 9200 4650 50 
+F5 "SCLK" I R 9200 4800 50 
+F6 "MPU9250_CS" I R 9200 4950 50 
+$EndSheet
+$Comp
+L Device:Fuse F3
+U 1 1 5F09C7F9
+P 14400 4550
+F 0 "F3" V 14203 4550 50  0000 C CNN
+F 1 "0.65A" V 14294 4550 50  0000 C CNN
+F 2 "" V 14330 4550 50  0001 C CNN
+F 3 "~" H 14400 4550 50  0001 C CNN
+	1    14400 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14550 4550 14850 4550
+Connection ~ 14850 4550
+Text Label 9200 4350 0    50   ~ 0
+MPU9250_DRDY
+Text Label 9200 4500 0    50   ~ 0
+MOSI
+Text Label 9200 4650 0    50   ~ 0
+MISO
+Text Label 9200 4800 0    50   ~ 0
+SCLk
+Text Label 9200 4950 0    50   ~ 0
+MPU9250_CS
+Wire Wire Line
+	14750 8850 15050 8850
+Text Label 15050 8850 0    50   ~ 0
+PWM1
+Wire Wire Line
+	14750 10250 14950 10250
+Text Label 14950 10250 0    50   ~ 0
+PWM2
+Wire Wire Line
+	14750 8950 15050 8950
+Text Label 15050 8950 0    50   ~ 0
+PWM3
+Wire Wire Line
+	14750 9550 15050 9550
+Text Label 15050 9550 0    50   ~ 0
+PWM4
+Wire Wire Line
+	14750 9150 15050 9150
+Text Label 15050 9150 0    50   ~ 0
+PWM5
+Wire Wire Line
+	14750 9450 15050 9450
+Text Label 15050 9450 0    50   ~ 0
+PWM6
+Text Label 3300 7900 0    50   ~ 0
+PWM1
+Text Label 3300 8000 0    50   ~ 0
+PWM2
+Text Label 3300 8100 0    50   ~ 0
+PWM3
+Text Label 3300 8200 0    50   ~ 0
+PWM4
+Text Label 3300 8300 0    50   ~ 0
+PWM5
+Text Label 3300 8400 0    50   ~ 0
+PWM6
 $EndSCHEMATC

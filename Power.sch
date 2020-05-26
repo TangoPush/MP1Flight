@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 7
 Title "Power handling"
 Date ""
 Rev ""
@@ -193,4 +193,59 @@ F 3 "" H 6400 3950 50  0001 C CNN
 $EndComp
 Text HLabel 3750 3100 0    50   Input ~ 0
 VDD_5V_Brick
+$Comp
+L Device:LED D?
+U 1 1 5F06186F
+P 7750 3500
+AR Path="/5F06186F" Ref="D?"  Part="1" 
+AR Path="/5EF6B0D5/5F06186F" Ref="D1"  Part="1" 
+F 0 "D1" V 7789 3382 50  0000 R CNN
+F 1 "LED" V 7698 3382 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7750 3500 50  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2186941.pdf" H 7750 3500 50  0001 C CNN
+F 4 "SML-D15UWT86C" V 7750 3500 50  0001 C CNN "PartNumber"
+F 5 "ROHM" V 7750 3500 50  0001 C CNN "Manufacturer"
+F 6 "Red" V 7600 3300 50  0000 C CNN "Colour"
+	1    7750 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F061875
+P 7750 3200
+AR Path="/5F061875" Ref="R?"  Part="1" 
+AR Path="/5EF6B0D5/5F061875" Ref="R1"  Part="1" 
+F 0 "R1" H 7820 3246 50  0000 L CNN
+F 1 "330" H 7820 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7680 3200 50  0001 C CNN
+F 3 "~" H 7750 3200 50  0001 C CNN
+	1    7750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F06187B
+P 7750 3050
+AR Path="/5F06187B" Ref="#PWR?"  Part="1" 
+AR Path="/5EF6B0D5/5F06187B" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 7750 2900 50  0001 C CNN
+F 1 "+5V" H 7765 3223 50  0000 C CNN
+F 2 "" H 7750 3050 50  0001 C CNN
+F 3 "" H 7750 3050 50  0001 C CNN
+	1    7750 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F061881
+P 7750 3650
+AR Path="/5F061881" Ref="#PWR?"  Part="1" 
+AR Path="/5EF6B0D5/5F061881" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 7750 3400 50  0001 C CNN
+F 1 "GND" H 7755 3477 50  0000 C CNN
+F 2 "" H 7750 3650 50  0001 C CNN
+F 3 "" H 7750 3650 50  0001 C CNN
+	1    7750 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
