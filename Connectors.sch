@@ -573,4 +573,156 @@ Text HLabel 2500 6500 2    50   Input ~ 0
 VDD_5V_Brick
 Text HLabel 2600 3900 2    50   Output ~ 0
 USART6-RXD
+Text HLabel 1900 4200 0    50   Input ~ 0
+FRSKY_INV
+$Comp
+L SamacSys_Parts:FDC855N Q1
+U 1 1 5ECF71A3
+P 4700 2050
+F 0 "Q1" H 5400 2315 50  0000 C CNN
+F 1 "FDC855N" H 5400 2224 50  0000 C CNN
+F 2 "SOT95P280X110-6N" H 5950 2150 50  0001 L CNN
+F 3 "http://docs-asia.electrocomponents.com/webdocs/12cf/0900766b812cf73c.pdf" H 5950 2050 50  0001 L CNN
+F 4 "Fairchild FDC855N N-channel MOSFET Transistor, 6.1 A, 30 V, 6-Pin SOT-23" H 5950 1950 50  0001 L CNN "Description"
+F 5 "1.1" H 5950 1850 50  0001 L CNN "Height"
+F 6 "ON Semiconductor" H 5950 1750 50  0001 L CNN "Manufacturer_Name"
+F 7 "FDC855N" H 5950 1650 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "512-FDC855N" H 5950 1550 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/ON-Semiconductor-Fairchild/FDC855N?qs=sXL1QONaU64rYBwsoFljaQ%3D%3D" H 5950 1450 50  0001 L CNN "Mouser Price/Stock"
+F 10 "8090871P" H 5950 1350 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/8090871P" H 5950 1250 50  0001 L CNN "RS Price/Stock"
+	1    4700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Female J9
+U 1 1 5ECF887A
+P 7950 2100
+F 0 "J9" H 7978 2126 50  0000 L CNN
+F 1 "Conn_01x05_Female" H 7978 2035 50  0000 L CNN
+F 2 "" H 7950 2100 50  0001 C CNN
+F 3 "~" H 7950 2100 50  0001 C CNN
+	1    7950 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 1900 7700 1900
+Wire Wire Line
+	7700 1900 7700 1750
+$Comp
+L Device:R R12
+U 1 1 5ECFBF90
+P 7700 1600
+F 0 "R12" H 7770 1646 50  0000 L CNN
+F 1 "1K5" H 7770 1555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7630 1600 50  0001 C CNN
+F 3 "~" H 7700 1600 50  0001 C CNN
+	1    7700 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR032
+U 1 1 5ECFC690
+P 7700 1450
+F 0 "#PWR032" H 7700 1200 50  0001 C CNN
+F 1 "GND" H 7705 1277 50  0000 C CNN
+F 2 "" H 7700 1450 50  0001 C CNN
+F 3 "" H 7700 1450 50  0001 C CNN
+	1    7700 1450
+	-1   0    0    1   
+$EndComp
+Text HLabel 7700 1900 0    50   Input ~ 0
+SAFETY_SWITCH_IN
+$Comp
+L Device:R R10
+U 1 1 5ECFE4AF
+P 7400 2000
+F 0 "R10" V 7400 1850 50  0000 C CNN
+F 1 "68" V 7400 2000 50  0000 C CNN
+F 2 "" V 7330 2000 50  0001 C CNN
+F 3 "~" H 7400 2000 50  0001 C CNN
+	1    7400 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7750 2000 7550 2000
+Text HLabel 7250 2000 0    50   Input ~ 0
+LED_SAFETY
+$Comp
+L power:+3.3V #PWR033
+U 1 1 5ED00DDC
+P 7750 2100
+F 0 "#PWR033" H 7750 1950 50  0001 C CNN
+F 1 "+3.3V" V 7750 2200 50  0000 L CNN
+F 2 "" H 7750 2100 50  0001 C CNN
+F 3 "" H 7750 2100 50  0001 C CNN
+	1    7750 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5ED01AAB
+P 5450 2600
+F 0 "#PWR030" H 5450 2350 50  0001 C CNN
+F 1 "GND" H 5455 2427 50  0000 C CNN
+F 2 "" H 5450 2600 50  0001 C CNN
+F 3 "" H 5450 2600 50  0001 C CNN
+	1    5450 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR031
+U 1 1 5ED02565
+P 7450 2300
+F 0 "#PWR031" H 7450 2150 50  0001 C CNN
+F 1 "+5V" H 7465 2473 50  0000 C CNN
+F 2 "" H 7450 2300 50  0001 C CNN
+F 3 "" H 7450 2300 50  0001 C CNN
+	1    7450 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5ED03190
+P 7600 2300
+F 0 "R11" V 7500 2250 50  0000 L CNN
+F 1 "0" V 7600 2300 50  0000 L CNN
+F 2 "" V 7530 2300 50  0001 C CNN
+F 3 "~" H 7600 2300 50  0001 C CNN
+	1    7600 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 2150 6250 2150
+Wire Wire Line
+	6300 2150 6300 2200
+Wire Wire Line
+	6250 2150 6250 2050
+Wire Wire Line
+	6250 2050 6100 2050
+Connection ~ 6250 2150
+Wire Wire Line
+	6250 2150 6300 2150
+Wire Wire Line
+	4700 2150 4600 2150
+Wire Wire Line
+	4600 2150 4600 2050
+Wire Wire Line
+	4600 2050 4700 2050
+Wire Wire Line
+	4600 2050 4600 1700
+Wire Wire Line
+	4600 1700 6250 1700
+Wire Wire Line
+	6250 1700 6250 2050
+Connection ~ 4600 2050
+Connection ~ 6250 2050
+Wire Wire Line
+	6100 2250 6100 2600
+Wire Wire Line
+	6100 2600 5450 2600
+Wire Wire Line
+	6300 2200 7750 2200
+Text HLabel 4700 2250 0    50   Input ~ 0
+ALARM
 $EndSCHEMATC

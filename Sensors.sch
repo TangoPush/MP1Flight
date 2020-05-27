@@ -220,7 +220,7 @@ U 1 1 5F079F2C
 P 2000 2050
 F 0 "TP5" V 1954 2238 50  0000 L CNN
 F 1 "TestPoint" V 2045 2238 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D3.0mm" H 2200 2050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2200 2050 50  0001 C CNN
 F 3 "~" H 2200 2050 50  0001 C CNN
 	1    2000 2050
 	0    1    1    0   
@@ -231,7 +231,7 @@ U 1 1 5F07B11D
 P 2000 1850
 F 0 "TP4" V 1954 2038 50  0000 L CNN
 F 1 "TestPoint" V 2045 2038 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D3.0mm" H 2200 1850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2200 1850 50  0001 C CNN
 F 3 "~" H 2200 1850 50  0001 C CNN
 	1    2000 1850
 	0    1    1    0   
@@ -242,7 +242,7 @@ U 1 1 5F07BC10
 P 2000 1700
 F 0 "TP3" V 1954 1888 50  0000 L CNN
 F 1 "TestPoint" V 2045 1888 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Plated_Hole_D3.0mm" H 2200 1700 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2200 1700 50  0001 C CNN
 F 3 "~" H 2200 1700 50  0001 C CNN
 	1    2000 1700
 	0    1    1    0   
@@ -275,7 +275,7 @@ U 1 1 5F0AAB86
 P 2000 2250
 F 0 "TP7" V 1954 2438 50  0000 L CNN
 F 1 "TestPoint" V 2045 2438 50  0000 L CNN
-F 2 "" H 2200 2250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 2200 2250 50  0001 C CNN
 F 3 "~" H 2200 2250 50  0001 C CNN
 	1    2000 2250
 	0    1    1    0   
