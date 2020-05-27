@@ -712,6 +712,9 @@ F10 "VDD_5V_Brick" I L 1850 7300 50
 F11 "USART6-TXD" I L 1850 6400 50 
 F12 "USART6-RXD" O L 1850 6250 50 
 F13 "FRSKY_INV" I L 1850 6750 50 
+F14 "SAFETY_SWITCH_IN" I L 1850 6900 50 
+F15 "LED_SAFETY" I L 1850 7000 50 
+F16 "ALARM" I L 1850 7100 50 
 $EndSheet
 Text Label 1600 6250 2    50   ~ 0
 USART6-RXD
@@ -903,4 +906,28 @@ Wire Wire Line
 	1850 6750 1600 6750
 Text Label 1600 6750 2    50   ~ 0
 FRSKY_INV
+Text Label 12350 5550 2    50   ~ 0
+Safety_Switch_In
+Wire Wire Line
+	12350 5550 13150 5550
+Wire Wire Line
+	1600 6900 1850 6900
+Text Label 1600 6900 2    50   ~ 0
+Safety_Switch_In
+Wire Wire Line
+	13150 5850 12650 5850
+Text Label 12650 5850 2    50   ~ 0
+Safety_LED
+Wire Wire Line
+	1850 7000 1600 7000
+Text Label 1600 7000 2    50   ~ 0
+Safety_LED
+Wire Wire Line
+	1850 7100 1600 7100
+Text Label 1600 7100 2    50   ~ 0
+Alarm
+Wire Wire Line
+	12650 6550 13150 6550
+Text Label 12650 6550 0    50   ~ 0
+Alarm
 $EndSCHEMATC
