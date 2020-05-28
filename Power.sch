@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 4 8
 Title "Power handling"
 Date ""
 Rev ""
@@ -355,4 +355,6 @@ F 3 "" H 6050 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6050 4400
+Text Notes 4950 4050 0    50   ~ 0
+For SDCARD\n
 $EndSCHEMATC

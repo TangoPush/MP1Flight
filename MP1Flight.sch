@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title "MP1Flight"
 Date "1"
 Rev "1"
@@ -829,7 +829,7 @@ $EndSheet
 $Sheet
 S 7600 3750 1600 1500
 U 5F064FD4
-F0 "Sensors" 50
+F0 "Sensors_PowerDomain1" 50
 F1 "Sensors.sch" 50
 F2 "MPU_9250_DRDY" I R 9200 4350 50 
 F3 "MOSI" I R 9200 4500 50 
@@ -930,4 +930,10 @@ Wire Wire Line
 	12650 6550 13150 6550
 Text Label 12650 6550 0    50   ~ 0
 Alarm
+$Sheet
+S 7600 2200 1600 1050
+U 5ED4AD57
+F0 "Ethernet" 50
+F1 "Ethernet.sch" 50
+$EndSheet
 $EndSCHEMATC
