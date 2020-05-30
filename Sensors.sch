@@ -688,10 +688,10 @@ F 3 "" H 3800 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR039
 U 1 1 5ED9A739
 P 4450 6950
-F 0 "#PWR?" H 4450 6700 50  0001 C CNN
+F 0 "#PWR039" H 4450 6700 50  0001 C CNN
 F 1 "GND" H 4455 6777 50  0000 C CNN
 F 2 "" H 4450 6950 50  0001 C CNN
 F 3 "" H 4450 6950 50  0001 C CNN
@@ -700,4 +700,384 @@ F 3 "" H 4450 6950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3800 6650 4150 6650
+$Comp
+L SamacSys_Parts:BMI088 IC5
+U 1 1 5ED34A16
+P 7650 5250
+F 0 "IC5" V 9231 5200 50  0000 C CNN
+F 1 "BMI088" V 9140 5200 50  0000 C CNN
+F 2 "BMI088" H 8900 5750 50  0001 L CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMI088-DS001-13.pdf" H 8900 5650 50  0001 L CNN
+F 4 "Inertial Measurement Unit Digital Output 2.5V/3.3V Automotive" H 8900 5550 50  0001 L CNN "Description"
+F 5 "1.45" H 8900 5450 50  0001 L CNN "Height"
+F 6 "Bosch Sensortec" H 8900 5350 50  0001 L CNN "Manufacturer_Name"
+F 7 "BMI088" H 8900 5250 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "262-BMI088" H 8900 5150 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Bosch-Sensortec/BMI088?qs=f9yNj16SXrIMFspTV6RB6Q%3D%3D" H 8900 5050 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 8900 4950 50  0001 L CNN "RS Part Number"
+F 11 "" H 8900 4850 50  0001 L CNN "RS Price/Stock"
+	1    7650 5250
+	0    -1   -1   0   
+$EndComp
+Text HLabel 6950 4850 0    50   Input ~ 0
+DRDY_BMI088_ACC2
+$Comp
+L power:GND #PWR042
+U 1 1 5ED3ADB9
+P 6400 5000
+F 0 "#PWR042" H 6400 4750 50  0001 C CNN
+F 1 "GND" H 6405 4827 50  0000 C CNN
+F 2 "" H 6400 5000 50  0001 C CNN
+F 3 "" H 6400 5000 50  0001 C CNN
+	1    6400 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4750 6400 4750
+Wire Wire Line
+	6400 4750 6400 5000
+Wire Wire Line
+	6950 4650 6000 4650
+Wire Wire Line
+	6000 4650 6000 4800
+$Comp
+L Device:C C42
+U 1 1 5ED3EE03
+P 6000 4950
+F 0 "C42" H 6115 4996 50  0000 L CNN
+F 1 "100nF" H 6115 4905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6115 4859 50  0001 L CNN
+F 3 "~" H 6000 4950 50  0001 C CNN
+	1    6000 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR041
+U 1 1 5ED3F534
+P 6000 5100
+F 0 "#PWR041" H 6000 4850 50  0001 C CNN
+F 1 "GND" H 6005 4927 50  0000 C CNN
+F 2 "" H 6000 5100 50  0001 C CNN
+F 3 "" H 6000 5100 50  0001 C CNN
+	1    6000 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR044
+U 1 1 5ED3F9DB
+P 6950 4550
+F 0 "#PWR044" H 6950 4300 50  0001 C CNN
+F 1 "GND" V 6955 4422 50  0000 R CNN
+F 2 "" H 6950 4550 50  0001 C CNN
+F 3 "" H 6950 4550 50  0001 C CNN
+	1    6950 4550
+	0    1    1    0   
+$EndComp
+Text HLabel 6950 4450 0    50   Input ~ 0
+CS2_BMI088_G
+$Comp
+L power:GND #PWR043
+U 1 1 5ED40513
+P 6850 4350
+F 0 "#PWR043" H 6850 4100 50  0001 C CNN
+F 1 "GND" V 6855 4222 50  0000 R CNN
+F 2 "" H 6850 4350 50  0001 C CNN
+F 3 "" H 6850 4350 50  0001 C CNN
+	1    6850 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6950 4250 6950 4350
+Connection ~ 6950 4350
+Wire Wire Line
+	6850 4350 6950 4350
+Text Label 5950 4650 2    50   ~ 0
+VDD_3V3_Sensors
+$Comp
+L Device:C C41
+U 1 1 5ED46DA6
+P 5600 4950
+F 0 "C41" H 5715 4996 50  0000 L CNN
+F 1 "100nF" H 5715 4905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5638 4800 50  0001 C CNN
+F 3 "~" H 5600 4950 50  0001 C CNN
+	1    5600 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4650 5600 4650
+Wire Wire Line
+	5600 4650 5600 4800
+Connection ~ 6000 4650
+$Comp
+L power:GND #PWR040
+U 1 1 5ED491C5
+P 5600 5100
+F 0 "#PWR040" H 5600 4850 50  0001 C CNN
+F 1 "GND" H 5605 4927 50  0000 C CNN
+F 2 "" H 5600 5100 50  0001 C CNN
+F 3 "" H 5600 5100 50  0001 C CNN
+	1    5600 5100
+	1    0    0    -1  
+$EndComp
+Text Label 8450 4250 0    50   ~ 0
+MOSI
+Wire Wire Line
+	8450 4350 8550 4350
+Wire Wire Line
+	8550 4350 8550 4850
+Wire Wire Line
+	8550 4850 8450 4850
+Text Label 8450 4450 0    50   ~ 0
+VDD_3V3_Sensors
+Text Label 8550 4850 0    50   ~ 0
+MISO
+Text HLabel 8450 4550 2    50   Input ~ 0
+DRDY3_BMIO88_GYRO1
+Text HLabel 8450 4650 2    50   Input ~ 0
+DRDY4_BMI088_ACC1
+Text HLabel 8450 4750 2    50   Input ~ 0
+CS1_BMI088_A
+Text HLabel 7650 5250 0    50   Input ~ 0
+DRDY4_BMI088_ACC1
+$Comp
+L SamacSys_Parts:BMM150 IC6
+U 1 1 5ED2E9C5
+P 1500 3900
+F 0 "IC6" H 2100 4165 50  0000 C CNN
+F 1 "BMM150" H 2100 4074 50  0000 C CNN
+F 2 "BGA12C28P5X5_156X156X40" H 2550 4000 50  0001 L CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMM150-DS001.pdf" H 2550 3900 50  0001 L CNN
+F 4 "Board Mount Hall Effect / Magnetic Sensors 3-Axis 1.56x1.56mm WLCSP-12 Geomagnetic" H 2550 3800 50  0001 L CNN "Description"
+F 5 "0.4" H 2550 3700 50  0001 L CNN "Height"
+F 6 "Bosch Sensortec" H 2550 3600 50  0001 L CNN "Manufacturer_Name"
+F 7 "BMM150" H 2550 3500 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "262-BMM150" H 2550 3400 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Bosch-Sensortec/BMM150?qs=d72FGnIDsgTOmKpCEe6mYw%3D%3D" H 2550 3300 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 2550 3200 50  0001 L CNN "RS Part Number"
+F 11 "" H 2550 3100 50  0001 L CNN "RS Price/Stock"
+	1    1500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR045
+U 1 1 5ED2F7A4
+P 1150 4650
+F 0 "#PWR045" H 1150 4400 50  0001 C CNN
+F 1 "GND" H 1155 4477 50  0000 C CNN
+F 2 "" H 1150 4650 50  0001 C CNN
+F 3 "" H 1150 4650 50  0001 C CNN
+	1    1150 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 3900 1150 4650
+Wire Wire Line
+	1150 3900 1500 3900
+Connection ~ 1500 3900
+Wire Wire Line
+	1500 3900 1550 3900
+Wire Wire Line
+	2850 4400 2700 4400
+Text Label 3000 4350 0    50   ~ 0
+VDD_3V3_Sensors
+$Comp
+L power:GND #PWR046
+U 1 1 5ED35C80
+P 2800 4550
+F 0 "#PWR046" H 2800 4300 50  0001 C CNN
+F 1 "GND" H 2805 4377 50  0000 C CNN
+F 2 "" H 2800 4550 50  0001 C CNN
+F 3 "" H 2800 4550 50  0001 C CNN
+	1    2800 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 4300 2700 4250
+Wire Wire Line
+	2700 3900 2800 3900
+Wire Wire Line
+	2800 3900 2800 4250
+Wire Wire Line
+	2800 4250 2700 4250
+Connection ~ 2700 4250
+Wire Wire Line
+	2700 4250 2700 4200
+Wire Wire Line
+	2800 4250 2800 4550
+Connection ~ 2800 4250
+Text HLabel 2700 4100 2    50   Input ~ 0
+BMM150_DRY
+Text HLabel 2700 4000 2    50   Input ~ 0
+BMM150_INT
+$Comp
+L Device:C C43
+U 1 1 5ED41C3C
+P 3000 4500
+F 0 "C43" H 3115 4546 50  0000 L CNN
+F 1 "100nF" H 3115 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3115 4409 50  0001 L CNN
+F 3 "~" H 3000 4500 50  0001 C CNN
+	1    3000 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4400 2850 4350
+Wire Wire Line
+	2850 4350 3000 4350
+$Comp
+L power:GND #PWR047
+U 1 1 5ED44F24
+P 3000 4650
+F 0 "#PWR047" H 3000 4400 50  0001 C CNN
+F 1 "GND" H 3005 4477 50  0000 C CNN
+F 2 "" H 3000 4650 50  0001 C CNN
+F 3 "" H 3000 4650 50  0001 C CNN
+	1    3000 4650
+	1    0    0    -1  
+$EndComp
+Text Label 1500 4000 2    50   ~ 0
+SCLK
+Text HLabel 1500 4100 0    50   Input ~ 0
+BMM150_CSB
+$Comp
+L Device:C C44
+U 1 1 5ED4DB19
+P 1350 4650
+F 0 "C44" H 1465 4696 50  0000 L CNN
+F 1 "100nF" H 1465 4605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1388 4500 50  0001 C CNN
+F 3 "~" H 1350 4650 50  0001 C CNN
+	1    1350 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4200 1350 4200
+Wire Wire Line
+	1350 4200 1350 4500
+$Comp
+L power:GND #PWR048
+U 1 1 5ED50CDB
+P 1350 4800
+F 0 "#PWR048" H 1350 4550 50  0001 C CNN
+F 1 "GND" H 1355 4627 50  0000 C CNN
+F 2 "" H 1350 4800 50  0001 C CNN
+F 3 "" H 1350 4800 50  0001 C CNN
+	1    1350 4800
+	1    0    0    -1  
+$EndComp
+Text Label 1500 4300 2    50   ~ 0
+MOSI
+Text Label 1500 4400 2    50   ~ 0
+MISO
+$Comp
+L SamacSys_Parts:BMP388 IC7
+U 1 1 5ED5431A
+P 1400 6200
+F 0 "IC7" H 2000 7081 50  0000 C CNN
+F 1 "BMP388" H 2000 6990 50  0000 C CNN
+F 2 "BMP388" H 2450 6700 50  0001 L CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP388-DS001-01.pdf" H 2450 6600 50  0001 L CNN
+F 4 "Board Mount Pressure Sensors MEMS Absolute Barometric Pressure Sensor" H 2450 6500 50  0001 L CNN "Description"
+F 5 "0" H 2450 6400 50  0001 L CNN "Height"
+F 6 "Bosch Sensortec" H 2450 6300 50  0001 L CNN "Manufacturer_Name"
+F 7 "BMP388" H 2450 6200 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "262-BMP388" H 2450 6100 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Bosch-Sensortec/BMP388?qs=rrS6PyfT74eIcD5Rv1Kf7A%3D%3D" H 2450 6000 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 2450 5900 50  0001 L CNN "RS Part Number"
+F 11 "" H 2450 5800 50  0001 L CNN "RS Price/Stock"
+	1    1400 6200
+	1    0    0    -1  
+$EndComp
+Text Label 2600 6200 0    50   ~ 0
+IMU_VDD_1V8
+Text Label 2200 5500 1    50   ~ 0
+VDD_3V3_Sensors
+Wire Wire Line
+	2000 5500 2300 5500
+$Comp
+L Device:C C45
+U 1 1 5ED5982E
+P 2450 5500
+F 0 "C45" V 2198 5500 50  0000 C CNN
+F 1 "C" V 2289 5500 50  0000 C CNN
+F 2 "" H 2488 5350 50  0001 C CNN
+F 3 "~" H 2450 5500 50  0001 C CNN
+	1    2450 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR050
+U 1 1 5ED5A552
+P 2600 5500
+F 0 "#PWR050" H 2600 5250 50  0001 C CNN
+F 1 "GND" V 2605 5372 50  0000 R CNN
+F 2 "" H 2600 5500 50  0001 C CNN
+F 3 "" H 2600 5500 50  0001 C CNN
+	1    2600 5500
+	0    -1   -1   0   
+$EndComp
+Text Label 1900 5500 1    50   ~ 0
+SCLK
+$Comp
+L power:GND #PWR049
+U 1 1 5ED5EB1A
+P 1150 6500
+F 0 "#PWR049" H 1150 6250 50  0001 C CNN
+F 1 "GND" H 1155 6327 50  0000 C CNN
+F 2 "" H 1150 6500 50  0001 C CNN
+F 3 "" H 1150 6500 50  0001 C CNN
+	1    1150 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 6500 1150 6200
+Wire Wire Line
+	1150 6200 1400 6200
+Text Label 1400 6300 2    50   ~ 0
+MOSI
+Text Label 1400 6400 2    50   ~ 0
+MISO
+Text HLabel 1900 7000 3    50   Input ~ 0
+BMP388_CSB
+Text HLabel 2000 7000 3    50   Input ~ 0
+BMP388_INT
+$Comp
+L power:GND #PWR051
+U 1 1 5ED667E2
+P 2700 6500
+F 0 "#PWR051" H 2700 6250 50  0001 C CNN
+F 1 "GND" H 2705 6327 50  0000 C CNN
+F 2 "" H 2700 6500 50  0001 C CNN
+F 3 "" H 2700 6500 50  0001 C CNN
+	1    2700 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 6300 2700 6300
+Wire Wire Line
+	2700 6300 2700 6400
+Wire Wire Line
+	2600 6400 2700 6400
+Connection ~ 2700 6400
+Wire Wire Line
+	2700 6400 2700 6500
+$Comp
+L Device:C C46
+U 1 1 5ED6CC01
+P 2900 6350
+F 0 "C46" H 3015 6396 50  0000 L CNN
+F 1 "100nF" H 3015 6305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2938 6200 50  0001 C CNN
+F 3 "~" H 2900 6350 50  0001 C CNN
+	1    2900 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 6200 2900 6200
+Wire Wire Line
+	2900 6500 2700 6500
+Connection ~ 2700 6500
+Text Label 1350 4200 2    50   ~ 0
+IMU_VDD_1V8
 $EndSCHEMATC
