@@ -97,7 +97,7 @@ U 1 1 5F0F06B9
 P 5400 2550
 F 0 "M1" H 5778 1871 50  0000 L CNN
 F 1 "Servo_Connector" H 5778 1780 50  0000 L CNN
-F 2 "" H 5400 2360 50  0001 C CNN
+F 2 "Servo3Way:3_6_2_54mm" H 5400 2360 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 5400 2360 50  0001 C CNN
 	1    5400 2550
 	1    0    0    -1  

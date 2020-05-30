@@ -68,21 +68,8 @@ F 3 "~" H 7100 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6700 3100 6900 3100
-$Comp
-L Device:Fuse F?
-U 1 1 5EF8875C
-P 4050 3100
-AR Path="/5EF8875C" Ref="F?"  Part="1" 
-AR Path="/5EF6B0D5/5EF8875C" Ref="F1"  Part="1" 
-F 0 "F1" V 3853 3100 50  0000 C CNN
-F 1 "2A" V 3944 3100 50  0000 C CNN
-F 2 "" V 3980 3100 50  0001 C CNN
-F 3 "~" H 4050 3100 50  0001 C CNN
-	1    4050 3100
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	3750 3100 3900 3100
+	3300 2500 3450 2500
 $Comp
 L PMEG2020CPA_115:PMEG2020CPA,115 D?
 U 1 1 5EF8876C
@@ -104,47 +91,19 @@ F 11 "http://uk.rs-online.com/web/p/products/8166833P" H 6150 2300 50  0001 L CN
 	1    4200 3100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Fuse F?
-U 1 1 5EF88772
-P 4050 3200
-AR Path="/5EF88772" Ref="F?"  Part="1" 
-AR Path="/5EF6B0D5/5EF88772" Ref="F2"  Part="1" 
-F 0 "F2" V 4300 3200 50  0000 C CNN
-F 1 "2A" V 4200 3200 50  0000 C CNN
-F 2 "" V 3980 3200 50  0001 C CNN
-F 3 "~" H 4050 3200 50  0001 C CNN
-	1    4050 3200
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J?
-U 1 1 5EF88778
-P 3550 3800
-AR Path="/5EF88778" Ref="J?"  Part="1" 
-AR Path="/5EF6B0D5/5EF88778" Ref="J7"  Part="1" 
-F 0 "J7" H 3468 3475 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 3468 3566 50  0000 C CNN
-F 2 "" H 3550 3800 50  0001 C CNN
-F 3 "~" H 3550 3800 50  0001 C CNN
-	1    3550 3800
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	3750 3700 3750 3200
-Wire Wire Line
-	3750 3200 3900 3200
+	2700 3650 2700 3200
 $Comp
 L power:GND #PWR?
 U 1 1 5EF88780
-P 3750 3800
+P 2700 3750
 AR Path="/5EF88780" Ref="#PWR?"  Part="1" 
 AR Path="/5EF6B0D5/5EF88780" Ref="#PWR03"  Part="1" 
-F 0 "#PWR03" H 3750 3550 50  0001 C CNN
-F 1 "GND" H 3755 3627 50  0000 C CNN
-F 2 "" H 3750 3800 50  0001 C CNN
-F 3 "" H 3750 3800 50  0001 C CNN
-	1    3750 3800
+F 0 "#PWR03" H 2700 3500 50  0001 C CNN
+F 1 "GND" H 2705 3577 50  0000 C CNN
+F 2 "" H 2700 3750 50  0001 C CNN
+F 3 "" H 2700 3750 50  0001 C CNN
+	1    2700 3750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -191,7 +150,7 @@ F 3 "" H 6400 3950 50  0001 C CNN
 	1    6400 3950
 	1    0    0    -1  
 $EndComp
-Text HLabel 3750 3100 0    50   Input ~ 0
+Text HLabel 3300 2500 0    50   Input ~ 0
 VDD_5V_Brick
 $Comp
 L Device:LED D?
@@ -301,7 +260,7 @@ U 1 1 5F100D4B
 P 6050 4550
 F 0 "C27" H 6165 4596 50  0000 L CNN
 F 1 "100nF" H 6165 4505 50  0000 L CNN
-F 2 "" H 6088 4400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6088 4400 50  0001 C CNN
 F 3 "~" H 6050 4550 50  0001 C CNN
 	1    6050 4550
 	1    0    0    -1  
@@ -319,8 +278,9 @@ U 1 1 5F102DEA
 P 5650 4550
 F 0 "C26" H 5768 4596 50  0000 L CNN
 F 1 "10uF" H 5768 4505 50  0000 L CNN
-F 2 "" H 5688 4400 50  0001 C CNN
-F 3 "~" H 5650 4550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5688 4400 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61A106KE69-01.pdf" H 5650 4550 50  0001 C CNN
+F 4 "GRM188R61A106KE69D" H 5650 4550 50  0001 C CNN "Part no"
 	1    5650 4550
 	1    0    0    -1  
 $EndComp
@@ -335,8 +295,9 @@ U 1 1 5F103B0A
 P 4450 4550
 F 0 "C25" H 4568 4596 50  0000 L CNN
 F 1 "10uF" H 4568 4505 50  0000 L CNN
-F 2 "" H 4488 4400 50  0001 C CNN
-F 3 "~" H 4450 4550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4488 4400 50  0001 C CNN
+F 3 "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R61A106KE69-01.pdf" H 4450 4550 50  0001 C CNN
+F 4 "GRM188R61A106KE69D" H 4450 4550 50  0001 C CNN "Part No"
 	1    4450 4550
 	1    0    0    -1  
 $EndComp
@@ -357,4 +318,67 @@ $EndComp
 Connection ~ 6050 4400
 Text Notes 4950 4050 0    50   ~ 0
 For SDCARD\n
+$Comp
+L SamacSys_Parts:1714955 J7
+U 1 1 5ED8CB55
+P 2700 3750
+F 0 "J7" H 2992 3385 50  0000 C CNN
+F 1 "1714955" H 2992 3476 50  0000 C CNN
+F 2 "SHDR2W110P0X635_1X2_1270X1250X2150P" H 3350 3850 50  0001 L CNN
+F 3 "https://www.phoenixcontact.com/online/portal/gb/pxc/product_detail_page/!ut/p/z1/3VdLc9owEP4r5MCtQrKwZdOZHoyZ8moIDknBvngkW6Zq_IoxkPLrKxtoaTqBQ4ZD7NkZS6vdb7VrfxotdOECugndiCUtRJrQSM4dl3gGHluDvqrc9r9aGJn3g9HQviMmwRr8Dl3oFpRBRylHkWA5zX9BZ8l4UioyEcglXVE7mlbO03" H 3350 3750 50  0001 L CNN
+F 4 "PHOENIX CONTACT - 1714955 - TERMINAL BLOCK, WIRE TO BRD, 2POS, 10AWG" H 3350 3650 50  0001 L CNN "Description"
+F 5 "21.5" H 3350 3550 50  0001 L CNN "Height"
+F 6 "Phoenix Contact" H 3350 3450 50  0001 L CNN "Manufacturer_Name"
+F 7 "1714955" H 3350 3350 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "1714955" H 3350 3250 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/1714955/phoenix-contact" H 3350 3150 50  0001 L CNN "Arrow Price/Stock"
+F 10 "651-1714955" H 3350 3050 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Phoenix-Contact/1714955?qs=cyzODkzcbwAF65hL8%2FUyaQ%3D%3D" H 3350 2950 50  0001 L CNN "Mouser Price/Stock"
+	1    2700 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L SamacSys_Parts:MFU0805FF02000P100 F1
+U 1 1 5ED8EA12
+P 2700 3200
+F 0 "F1" H 3050 3425 50  0000 C CNN
+F 1 "MFU0805FF02000P100" H 3050 3334 50  0000 C CNN
+F 2 "FUSC2012X55N" H 3250 3250 50  0001 L CNN
+F 3 "http://www.mouser.com/datasheet/2/427/mfuserie-239895.pdf" H 3250 3150 50  0001 L CNN
+F 4 "VISHAY - MFU0805FF02000P100 - FUSE, 0805 SMD, 2A" H 3250 3050 50  0001 L CNN "Description"
+F 5 "0.55" H 3250 2950 50  0001 L CNN "Height"
+F 6 "Vishay" H 3250 2850 50  0001 L CNN "Manufacturer_Name"
+F 7 "MFU0805FF02000P100" H 3250 2750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "MFU0805FF02000P100" H 3250 2650 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/mfu0805ff02000p100/vishay" H 3250 2550 50  0001 L CNN "Arrow Price/Stock"
+F 10 "594-MFU0805FF02000P1" H 3250 2450 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Vishay-Beyschlag/MFU0805FF02000P100?qs=oI046glRurtNfIoauhkpAQ%3D%3D" H 3250 2350 50  0001 L CNN "Mouser Price/Stock"
+	1    2700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3200 3400 3200
+$Comp
+L SamacSys_Parts:MFU0805FF02000P100 F2
+U 1 1 5ED92F76
+P 3450 2500
+F 0 "F2" H 3800 2725 50  0000 C CNN
+F 1 "MFU0805FF02000P100" H 3800 2634 50  0000 C CNN
+F 2 "FUSC2012X55N" H 4000 2550 50  0001 L CNN
+F 3 "http://www.mouser.com/datasheet/2/427/mfuserie-239895.pdf" H 4000 2450 50  0001 L CNN
+F 4 "VISHAY - MFU0805FF02000P100 - FUSE, 0805 SMD, 2A" H 4000 2350 50  0001 L CNN "Description"
+F 5 "0.55" H 4000 2250 50  0001 L CNN "Height"
+F 6 "Vishay" H 4000 2150 50  0001 L CNN "Manufacturer_Name"
+F 7 "MFU0805FF02000P100" H 4000 2050 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "MFU0805FF02000P100" H 4000 1950 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/mfu0805ff02000p100/vishay" H 4000 1850 50  0001 L CNN "Arrow Price/Stock"
+F 10 "594-MFU0805FF02000P1" H 4000 1750 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Vishay-Beyschlag/MFU0805FF02000P100?qs=oI046glRurtNfIoauhkpAQ%3D%3D" H 4000 1650 50  0001 L CNN "Mouser Price/Stock"
+	1    3450 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2500 4150 3100
+Wire Wire Line
+	4150 3100 4200 3100
 $EndSCHEMATC

@@ -268,29 +268,6 @@ X DET_B 9 -900 -500 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Screw_Terminal_01x02
-#
-DEF Connector_Screw_Terminal_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Screw_Terminal_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TerminalBlock*:*
-$ENDFPLIST
-DRAW
-C 0 -100 25 1 1 6 N
-C 0 0 25 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-P 2 1 1 6 -21 -87 13 -120 N
-P 2 1 1 6 -21 13 13 -20 N
-P 2 1 1 6 -14 -80 20 -113 N
-P 2 1 1 6 -14 20 20 -13 N
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_TestPoint
 #
 DEF Connector_TestPoint TP 0 30 N N 1 F N
@@ -796,6 +773,28 @@ X Vout 3 400 100 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
+# SamacSys_Parts_1714955
+#
+DEF SamacSys_Parts_1714955 J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "SamacSys_Parts_1714955" 650 200 50 H V L CNN
+F2 "SHDR2W110P0X635_1X2_1270X1250X2150P" 650 100 50 H I L CNN
+F3 "https://www.phoenixcontact.com/online/portal/gb/pxc/product_detail_page/!ut/p/z1/3VdLc9owEP4r5MCtQrKwZdOZHoyZ8moIDknBvngkW6Zq_IoxkPLrKxtoaTqBQ4ZD7NkZS6vdb7VrfxotdOECugndiCUtRJrQSM4dl3gGHluDvqrc9r9aGJn3g9HQviMmwRr8Dl3oFpRBRylHkWA5zX9BZ8l4UioyEcglXVE7mlbO03" 650 0 50 H I L CNN
+F4 "PHOENIX CONTACT - 1714955 - TERMINAL BLOCK, WIRE TO BRD, 2POS, 10AWG" 650 -100 50 H I L CNN "Description"
+F5 "21.5" 650 -200 50 H I L CNN "Height"
+F6 "Phoenix Contact" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "1714955" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "1714955" 650 -500 50 H I L CNN "Arrow Part Number"
+F9 "https://www.arrow.com/en/products/1714955/phoenix-contact" 650 -600 50 H I L CNN "Arrow Price/Stock"
+F10 "651-1714955" 650 -700 50 H I L CNN "Mouser Part Number"
+F11 "https://www.mouser.co.uk/ProductDetail/Phoenix-Contact/1714955?qs=cyzODkzcbwAF65hL8%2FUyaQ%3D%3D" 650 -800 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 U
+X 2 2 0 -100 200 R 50 50 0 0 U
+ENDDRAW
+ENDDEF
+#
 # SamacSys_Parts_BMI088
 #
 DEF SamacSys_Parts_BMI088 IC 0 30 Y Y 1 F N
@@ -1038,6 +1037,29 @@ X TXM 6 0 -500 200 R 50 50 0 0 U
 X TXP 7 0 -600 200 R 50 50 0 0 U
 X XO 8 0 -700 200 R 50 50 0 0 U
 X XI 9 600 -1700 200 U 50 50 0 0 U
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_MFU0805FF02000P100
+#
+DEF SamacSys_Parts_MFU0805FF02000P100 F 0 30 Y Y 1 F N
+F0 "F" 550 250 50 H V L CNN
+F1 "SamacSys_Parts_MFU0805FF02000P100" 550 150 50 H V L CNN
+F2 "FUSC2012X55N" 550 50 50 H I L CNN
+F3 "http://www.mouser.com/datasheet/2/427/mfuserie-239895.pdf" 550 -50 50 H I L CNN
+F4 "VISHAY - MFU0805FF02000P100 - FUSE, 0805 SMD, 2A" 550 -150 50 H I L CNN "Description"
+F5 "0.55" 550 -250 50 H I L CNN "Height"
+F6 "Vishay" 550 -350 50 H I L CNN "Manufacturer_Name"
+F7 "MFU0805FF02000P100" 550 -450 50 H I L CNN "Manufacturer_Part_Number"
+F8 "MFU0805FF02000P100" 550 -550 50 H I L CNN "Arrow Part Number"
+F9 "https://www.arrow.com/en/products/mfu0805ff02000p100/vishay" 550 -650 50 H I L CNN "Arrow Price/Stock"
+F10 "594-MFU0805FF02000P1" 550 -750 50 H I L CNN "Mouser Part Number"
+F11 "https://www.mouser.co.uk/ProductDetail/Vishay-Beyschlag/MFU0805FF02000P100?qs=oI046glRurtNfIoauhkpAQ%3D%3D" 550 -850 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 2 0 1 6 200 0 500 0 N
+P 5 0 1 6 200 50 500 50 500 -50 200 -50 200 50 N
+X ~ 1 0 0 200 R 50 50 0 0 U
+X ~ 2 700 0 200 L 50 50 0 0 U
 ENDDRAW
 ENDDEF
 #
